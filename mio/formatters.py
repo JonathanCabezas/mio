@@ -14,7 +14,7 @@ from mio.consts import (
     INDENTATION,
     BRACES_PATTERN,
 )
-from utils.strings import unaccentuate
+from mio.utils.strings import unaccentuate
 
 level = -1
 
@@ -51,8 +51,8 @@ class CustomFormatter(logging.Formatter):
         use_colors: bool = False,
         indent_levels: bool = True,
     ):
-        self.datefmt = datefmt
-        self.last_date = None
+        self.datefmt: str = datefmt
+        self.last_date: str | None = None
 
         self.handle_date = handle_date
         self.use_colors = use_colors
@@ -117,7 +117,7 @@ class CustomFormatter(logging.Formatter):
             self.args_index = (self.args_index + 1) % len(CustomFormatter.ARGS_COLORS)
 
         if braces_count > 0:
-            record.msg = msg.format(*record.args)
+            record.msg = msg.format(*record.args)  # TODO check if this is correct
             record.args = ()
 
     def find_msg_color(self, record):

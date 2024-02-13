@@ -1,13 +1,9 @@
 import sys
 import logging
 
-from exit_gracefully import exit_gracefully
-
 
 def install_excepthook():
     def handle_exception(exc_type, exc_value, exc_traceback):
-        exit_gracefully()
-
         if issubclass(exc_type, KeyboardInterrupt):
             sys.__excepthook__(exc_type, exc_value, exc_traceback)
             return

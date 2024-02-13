@@ -1,0 +1,18 @@
+[Tue, 13 Feb 2024 14:30:19] INFO     ┌──────────────┐
+                            INFO     │ Main section │
+                            INFO     └──────────────┘
+                            INFO       ┌────────────────────────┐
+                            INFO       │ Connecting to database │
+                            INFO       └────────────────────────┘
+[Tue, 13 Feb 2024 14:34:21] INFO     ┌──────────────────┐
+                            INFO     │ Importing orders │
+                            INFO     └──────────────────┘
+                            INFO       ┌───────────────────────┐
+                            INFO       │ Querying the database │
+                            INFO       └───────────────────────┘
+[Tue, 13 Feb 2024 14:39:28] INFO     ┌────────────────────────┐
+                            INFO     │ Orders synchronization │
+                            INFO     └────────────────────────┘
+                            INFO       ┌────────────────────────────┐
+                            INFO       │ Connecting to the database │
+                            INFO       └────────────────────────────┘
