@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "mio"
+version = "0.1.0"
+description = "Mio (Magical IO) is a library to easily create beautiful and colored command-line outputs from logging, and automate actions on logs (automatic mails sent to admins on critical error for example)."
+authors = ["Jonathan Cabezas <jonathan.cabezas.lyon@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
